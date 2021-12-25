@@ -167,18 +167,6 @@ function createProduct() {
     else SanPham = JSON.parse(localStorage.getItem('Product'));
 }
 console.log("Chuỗi SP" + JSON.stringify(SanPham));
-//Tạo Những Mảng Sản Phẩm Theo Hãng
-// let Xiaomi = SanPham.filter(function(e) {
-//     return e.type == "Xiaomi";
-// });
-
-// let Samsung = SanPham.filter(function(e) {
-//     return e.type == "Samsung";
-// });
-// let Oppo = SanPham.filter(function(e) {
-//     return e.type == "Oppo";
-// });
-
 //Lấy mảng tìm kiếm 
 let Mangtsp = JSON.parse(localStorage.getItem('Mangsp'));
 
@@ -383,10 +371,6 @@ function timkiemsp(arr) {
         }
     }
     return Arrayfind;
-}
-function Runtimkiemsp() {
-    localStorage.setItem('Mangsp', JSON.stringify(timkiemsp()));
-    window.location.href = "?SP=Timkiem";
 }
 
 //Function lọc giá

@@ -19,8 +19,6 @@ function alertClose() {
     document.getElementById('TK_Nen').style.display = "none";
 }
 function DangKy() {
-    // var dangki = document.querySelector('.form');
-    // dangki.innerHTML = '<h2 class="">REGISTER</h2> <div onclick="dkClose();" class="btnclose"><i class="icon_close far fa-times-circle"></i></div><div>Username</div><input class="in" type="text" placeholder="Enter your Username..." id="tk"><div style="color: red;" id="loitaikhoan"></div><div >Password</div><input class="in" type="text" placeholder="Enter your Password..." id="mk"><div style="color: red;" id="loimatkhau"></div><div>Name</div><input class="in" type="text" placeholder="Enter your Name..." id="nm"><div>Phone</div><input class="in" type="number"  placeholder="Enter your Phone..." id="ph"> <div style="color: red;" id="loiphone"></div><a href="#"><input type="button" class="dangnhap" onclick="register();" value="Đăng Kí"></input></a> <div class="footerfrom">Bạn đã có tài khoản ?<a href="#" style="color: darkgreen; opacity: 0.8; cursor: pointer; " onclick="dn()">Đăng Nhập</a></div>';
     document.getElementById('TK_CONTENT_DK').style.display="flex";
     document.getElementById('TK_CONTENT_DN').style.display="none";
     document.getElementById('NUT_DN_DK').value="Đăng Ký"; 
@@ -30,8 +28,6 @@ function DangKy() {
     document.getElementById('Nut_DangNhap').style.color="black"
 }
 function DangNhap() {
-    // var dangnhap = document.querySelector('.form');
-    // dangnhap.innerHTML = '<h2 class="">LOGIN</h2>  <div onclick="alertClose();" class="btnclose"><i class="icon_close far fa-times-circle"></i></div>    <div>       <div id="NhapTK">Username</div>       <input class="in" type="text" placeholder="Enter your Username..." id="tk">  <div id="NhapMK" >Password</div>  <input class="in" type="password" placeholder="Enter your Password..." id="mk">   </div> <a href="#"><input type="button" class="dangnhap" onclick="login();" value="Đăng Nhập"></input></a>   <div class="footerfrom">Bạn đã có tài khoản chưa ?<a href="#" style="color: darkgreen; opacity: 0.8; cursor: pointer; " onclick="dk()">Đăng Kí</a></div>';
     document.getElementById('TK_CONTENT_DK').style.display="none";
     document.getElementById('TK_CONTENT_DN').style.display="flex";
     document.getElementById('NUT_DN_DK').value="Đăng Nhập";
