@@ -1,0 +1,122 @@
+.layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.247);
+    z-index: 6;
+    display: none;
+}
+#GT{
+    max-height: 80%;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 10px;
+    color: rgb(56, 56, 56);
+    animation: fadein 0.5s ease-in;
+}
+#GT_Content{
+    width: 100%;
+    margin: auto;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#GT_Content p{
+    margin-left: 3%;
+}
+#GT_Content h3{
+    width: 100%;
+    background-color: rgba(80, 77, 77, 0.795);
+    color: aliceblue;
+    padding: 1%;
+    text-align: center;
+}
+.close{
+    position: absolute;
+    top: 1%;
+    right: -4%;
+    font-size: 250%;
+    color: rgba(43, 43, 43, 0.349);
+    background-color: rgba(255, 255, 255, 0.733);
+    width: 3.6%;
+    display: flex;
+    border-radius: 10%;
+    justify-content: center;
+}
+#GT_Close{
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    font-size: 250%;
+    color: rgba(43, 43, 43, 0.349);
+    background-color: rgba(255, 255, 255, 0.733);
+    width: 3.6%;
+    display: flex;
+    border-radius: 10%;
+    justify-content: center;
+}
+.close:hover{
+    background-color: rgb(255, 255, 255) !important;
+    color: rgba(71, 71, 71, 0.801) !important;
+    cursor: pointer;
+}
+#GT_LH li {
+    display: flex;
+    flex-direction: row;
+}
+/* Liên Hệ v */
+#LH{
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+    animation: fadein 0.5s ease-in;
+}
+#LH_Close{
+    top: 2.6%;
+    height: auto;
+    width: 3.6%;
+    background-color:rgba(255, 255, 255, 0.651);
+}
+#LH_Content{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+#LH_Content div{
+    display: flex;
+    flex-direction: row;
+    word-wrap: break-word;
+    margin: auto;
+}
+#LH_Content div a{
+    font-size: 200%;
+    margin: 5px;
+    color: rgb(53, 53, 53);
+}
+/* Liên Hệ ^ */
+
+
+/* Animation */
+@keyframes  fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

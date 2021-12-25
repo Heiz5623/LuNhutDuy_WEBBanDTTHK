@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="GioHangCSS.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="login.js"></script>
+    <script src="giohang.js"></script>
+    <link rel="stylesheet" href="slider.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css">
+    <style>
+    </style>
+</head>
+<script>
+    var index =1;
+    setInterval(changeimg=function()
+    {
+        var imgs=["./img/redmi10.jpg","./img/SliSSGLX.jpg"];
+        document.getElementById('img').src =imgs[index];
+        index++;
+        if(index==2)
+        {
+            index=0;
+        }
+    },2000);
+    var index2 =1;
+    setInterval(changeimg2=function()
+    {
+        var imgs2=["./img/xiaologo.svg.png","./img/SSIc.jpg"];
+        document.getElementById('imgs2').src =imgs2[index2];
+        index2++;
+        if(index2==2)
+        {
+            index2=0;
+        }
+    },2000);
+</script>
+<body style="margin: 0; height: 1500px;">
+    <div id="main" style="display: flex; margin: 0; width: 100%; height: 100%;">
+        <form id="Fmain" style="margin: 0; width: 100%; height: 100%;">
+            <div class="modal_login" style="display: none;">
+                <div class="nen"></div>
+                <div class="giaodien">
+                    <div class="form">
+                        <h2 class="">LOGIN</h2>
+                        <div onclick="alertClose();" class="btnclose"><i class="icon_close far fa-times-circle"></i></div>
+                        <div>
+                            <div id="NhapTK">Username</div>
+                            <input class="in" type="text" placeholder="Enter your Username..." id="tk">
+                            <div id="NhapMK">Password</div>
+                            <input class="in" type="password" placeholder="Enter your Password..." id="mk">
+                            <div><i class="fab fa-facebook icon" style="color: blue;"></i><i class="fab fa-twitter icon" style="color:dodgerblue;"></i><i class="fab fa-tumblr-square icon" style="color: darkslategray;"></i></div>
+                        </div>
+                       <!--<div><input type="button" value="LOGIN" class="dangnhap" onclick="login();"></div>-->
+                       <a href="#"><input type="button" class="dangnhap" onclick="login();" value="Đăng Nhập"></input></a>
+                        <!--<div><i class="far fa-user-circle dangnhap" onclick="login();" ></i></div>-->
+                        <div class="footerfrom">Bạn đã có tài khoản chưa ?<a href="#" style="color: darkgreen; opacity: 0.8; cursor: pointer; " onclick="dk()">Đăng Kí</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="top">
+                <div id="Home" style="flex: 1;">
+                    <a href="index.html"><div onclick="TrangChu()">Trang Chủ</div>
+                    <a href="GioiThieu.html"><div onclick="GioiThieu()">Giới Thiệu</div>
+                    <a href="index.html"><div onclick="LienHe()">Liên Hệ</div>
+                </div>
+            </div>
+</body>
+</html>
