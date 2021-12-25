@@ -518,13 +518,13 @@ a{
         font-size: 80%;
     }
     #ifSP_Overlay{
-        flex-direction: row;
+        flex-direction: column;
     }
     #ThongTinSP{    
-        height: 100%;
-        width: auto;
+        height: 50%;
+        width: 100%;
         font-size: 70%;
-        flex-direction: column;
+        flex-direction: row;
         margin: auto;
         
     }
@@ -537,6 +537,9 @@ a{
     #ThongTinSP_text{
         padding-top: 5%;
         box-sizing: border-box;
+    }
+    #ThongTinSP_text h6{
+        margin-top: 10% !important;
     }
     @media (max-width: 1390px) {
     .slide2{
@@ -556,7 +559,7 @@ a{
         #findproduct a{
             font-size: 20px;
         }
-    #ifSP_Overlay{
+    /* #ifSP_Overlay{
         flex-direction: column;
     }
     #ThongTinSP{    
@@ -566,7 +569,6 @@ a{
         flex-direction: column;
         margin: auto;
         padding: 2%;
-        
     }
     #ThongTinSP img{
         height: 100%;
@@ -578,6 +580,10 @@ a{
         
         padding-top: 0;
         box-sizing: none;
+    } */
+    #ThongTinSP_text h6{
+        margin-top: 5% !important;
+        font-size: 30px;
     }
     }
     
@@ -641,6 +647,13 @@ a{
         #title {
             justify-content: center;
         }
+        #ThongTinSP_text h6{
+            margin-top: 2% !important;
+            font-size: 15px;
+        }
+        #ThongTinSP_text div{
+            font-size: 10px !important;
+        }
 
     }
 }
@@ -658,12 +671,11 @@ a{
         font-size: 20px;
         color: #212529;
     }
-
 }
 
 @media (max-width: 400px)
 {
-    #ifSP_Overlay{
+    /* #ifSP_Overlay{
         flex-direction: column;
     }
     #ThongTinSP{ 
@@ -683,7 +695,7 @@ a{
     #ThongTinSP_text{
         padding: 0;
         box-sizing: border-box;
-    }
+    } */
     
 
 
