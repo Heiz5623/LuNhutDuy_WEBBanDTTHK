@@ -272,7 +272,7 @@ function LocSP(val = 0, TK="") {
     sort=JSON.parse(localStorage.getItem('SX'));
     console.log(sort);
     var t = SanPham;
-    if (Hang[1] == undefined) {
+    if (Hang[1] == undefined || Hang[1]=="") {
         var a = SanPham;
         t=a;
         if(TK != "")
