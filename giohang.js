@@ -138,6 +138,9 @@ function layThongTinKhachHang(TenDangNhap){
     }
 }
 var soluongHD;
+
+
+
 //Tạo đơn hàng v
 let DonHang=[];
 if(localStorage.getItem('DonHang')==null)
@@ -181,8 +184,7 @@ function xuatDonHang(){
     var TenTK=layThongTinKhachHang(tentaikhoang).nameuser;
     var SanPham=[];
     var DonGia=document.getElementById('TongGia_GH').innerHTML;
-    DonGia=parseInt(DonGia.split(/[$]/)[0]);
-
+    DonGia=parseInt(DonGia.split(/[$]/)[0]); 
     if(DonGia==0)
     {
         alert('Không có sản phẩm trong giỏ hàng');

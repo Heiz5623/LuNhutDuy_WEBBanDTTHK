@@ -174,13 +174,11 @@ let Mangtsp = JSON.parse(localStorage.getItem('Mangsp'));
 localStorage.setItem('locgiasp',JSON.stringify({tugia:"",dengia:""}));
 
 window.onload = function () {
-    ;
     createProduct();
     LocSP();
     MangLoaiSP();
     checkvotk();
     sortMode("BT");
-
 }
 
 // chèn sản phẩm vào trang
@@ -272,7 +270,8 @@ function LocSP(val = 0, TK="") {
     sort=JSON.parse(localStorage.getItem('SX'));
     console.log(sort);
     var t = SanPham;
-    if (Hang[1] == undefined) {
+    console.log(Hang[1]);
+    if (Hang[1] == undefined || Hang[1]=="") {
         var a = SanPham;
         t=a;
         if(TK != "")
@@ -298,10 +297,8 @@ function LocSP(val = 0, TK="") {
     }
     console.log(TK);    
     localStorage.setItem('LenMangSPhienhanh', JSON.stringify(t.length));    
-    ;
     innerSoTrang(t.length);
-    innerSP(SapXep(sort, t), sotrang);
-    
+    innerSP(SapXep(sort, t), sotrang);    
 }
 function innerSoTrang(tlen) {
     var max = Math.ceil(tlen / 8);

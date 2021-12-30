@@ -15,7 +15,7 @@ function ShowDangNhap() {
     document.getElementById('Nut_DangKy').style.backgroundColor="white"
     document.getElementById('Nut_DangKy').style.color="black"   
 }
-function alertClose() {
+function Login_Close() {
     document.getElementById('TK_Nen').style.display = "none";
 }
 function DangKy() {
@@ -131,7 +131,7 @@ function login() {
             if (userArray1[i].taikhoan.toUpperCase() == inputUsername.toUpperCase() && userArray1[i].matkhau ==  inputPassword )
             {
                 localStorage.setItem('tendangnhap',JSON.stringify(inputUsername));
-                alertClose();
+                Login_Close();
                 alert('Đăng nhập thành công');
                 console.log(userArray1[i].thuoctinh=='0');
                 localStorage.setItem('abc','1');
